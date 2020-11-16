@@ -215,6 +215,22 @@ Développement d'une application de liste de bières
   )
   ```
 
+- Utilisez le hook `useQuery` dans le composant `Beer` pour récupérer la bière concernée par son Id
+  ```es6
+    const { data, loading } = useQuery(
+      gql`
+        query($beerId: ID!) {
+          beer(beerId: $beerId) {
+            id, name, description, tagline
+          }
+        }
+      `,
+      {
+        variables: { beerId: '1' }
+      }
+    )
+  ```
+
 ## TP 5 - Mutations
 
 Le but de ce TP est de pouvoir mettre une bière en favoris
