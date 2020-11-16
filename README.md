@@ -112,8 +112,15 @@ Développement d'une application de liste de bières
 
 ## TP3 - Les datasources
 
+- Installez le rest datasource
+  ```bash
+  npm install apollo-datasource-rest
+  ```
+
 - Créez un `RESTDataSource` pour accéder à la PunkAPI
   ```es6
+  const { RESTDataSource } = require('apollo-datasource-rest')
+
   export class BeersAPI extends RESTDataSource {
     constructor() {
       super();
