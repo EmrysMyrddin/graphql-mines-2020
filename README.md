@@ -121,13 +121,13 @@ Développement d'une application de liste de bières
   ```es6
   const { RESTDataSource } = require('apollo-datasource-rest')
 
-  export class BeersAPI extends RESTDataSource {
+  class BeersAPI extends RESTDataSource {
     constructor() {
       super();
       this.baseURL = "https://api.punkapi.com/v2/";
     }
 
-    async getBeer(id): Promise<Beer> {
+    async getBeer(id) {
       return // TODO: fetch one beer. WARNING: /beer/{id} returns an array even if it has always just 1 result.
     }
 
