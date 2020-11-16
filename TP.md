@@ -63,7 +63,7 @@ Développement d'une application de liste de bières
 
 - Lancer votre server avec la commande (la commande nodemon lance node et relance votre server lorsque vous modifiez un fichier)
   ```bash
-  nodemon .
+  npx nodemon .
   ```
 
 - Vous pouvez accéder au lien affiché dans la console pour accéder à GraphiQL.
